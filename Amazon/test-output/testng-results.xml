@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-22T21:12:09 IST" name="Suite" finished-at="2024-11-22T21:12:56 IST" duration-ms="47010">
+    <groups>
+      <group name="regressiontest">
+        <method signature="AmazonTestCases.tc08()[pri:1, instance:TestCases.AmazonTestCases@5032714f]" name="tc08" class="TestCases.AmazonTestCases"/>
+        <method signature="AmazonTestCases.tc07()[pri:2, instance:TestCases.AmazonTestCases@5032714f]" name="tc07" class="TestCases.AmazonTestCases"/>
+      </group> <!-- regressiontest -->
+      <group name="smoketest">
+        <method signature="AmazonTestCases.tc07()[pri:2, instance:TestCases.AmazonTestCases@5032714f]" name="tc07" class="TestCases.AmazonTestCases"/>
+      </group> <!-- smoketest -->
+    </groups>
+    <test started-at="2024-11-22T21:12:09 IST" name="Test" finished-at="2024-11-22T21:12:56 IST" duration-ms="47010">
+      <class name="TestCases.AmazonTestCases">
+        <test-method is-config="true" signature="BeforeGroup()[pri:0, instance:TestCases.AmazonTestCases@5032714f]" started-at="2024-11-22T21:12:09 IST" name="BeforeGroup" finished-at="2024-11-22T21:12:09 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeGroup -->
+        <test-method is-config="true" signature="initialization(java.lang.String)[pri:0, instance:TestCases.AmazonTestCases@5032714f]" started-at="2024-11-22T21:12:09 IST" name="initialization" finished-at="2024-11-22T21:12:16 IST" duration-ms="7672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="tc08()[pri:1, instance:TestCases.AmazonTestCases@5032714f]" started-at="2024-11-22T21:12:16 IST" name="tc08" finished-at="2024-11-22T21:12:20 IST" duration-ms="3628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc08 -->
+        <test-method is-config="true" signature="initialization(java.lang.String)[pri:0, instance:TestCases.AmazonTestCases@5032714f]" started-at="2024-11-22T21:12:20 IST" name="initialization" finished-at="2024-11-22T21:12:26 IST" duration-ms="6081" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="tc07()[pri:2, instance:TestCases.AmazonTestCases@5032714f]" started-at="2024-11-22T21:12:26 IST" name="tc07" finished-at="2024-11-22T21:12:56 IST" duration-ms="29376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc07 -->
+        <test-method is-config="true" signature="AfterGroup()[pri:0, instance:TestCases.AmazonTestCases@5032714f]" started-at="2024-11-22T21:12:56 IST" name="AfterGroup" finished-at="2024-11-22T21:12:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterGroup -->
+      </class> <!-- TestCases.AmazonTestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

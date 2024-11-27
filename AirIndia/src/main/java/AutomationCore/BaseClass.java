@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BaseClass {
 	
-	public WebDriver driver;//declare
+public WebDriver driver;//declare
 	
 	
 	public WebDriver browserinitialization(String browsername) throws Exception {
@@ -38,7 +38,7 @@ public class BaseClass {
 			throw new Exception("Invalid name exception");
 		}
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); //If page loads in 2 seconds it will skip remaining 3 seconds.(if thread.sleep it will wait forcefully 5 seconds)
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); //If page loads in 2 seconds it will skip remaining 3 seconds.(if thread.sleep it will wait forcefully 5 seconds)
 		
 		return driver;
 	}

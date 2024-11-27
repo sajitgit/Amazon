@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+<parameter name="browser" value="chrome"></parameter>
+<groups>
+<run>
+<include name="regressiontest"></include>
+</run>
+</groups>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="TestCases.AmazonTestCases">
+      
+      </class>
+      
+    </classes>
+  </test> 
+</suite> 

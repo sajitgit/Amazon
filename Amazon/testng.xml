@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="browser" value="chrome"></parameter>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="TestCases.AmazonTestCases">
+      <methods>
+<!--      <include name="tc04"></include>
+-->      
+
+	<include name="tc12"></include>
+	<!--<include name="tc05"></include>-->
+    <!-- <include name="tc08"></include>
+      <include name="tc07"></include>
+      -->
+     <!-- <exclude name="tc05"></exclude>-->
+      
+      </methods>
+      
+      </class>
+      
+    </classes>
+  </test> 
+</suite> 
