@@ -1,6 +1,9 @@
 package SingaporeAirlines;
 
 import org.testng.annotations.Test;
+
+import java.awt.AWTException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
@@ -30,10 +33,11 @@ SingaporeAirlinesHomePage homepage;
 	}
 	
 	@Test
-	public void searchFlights() {
+	public void searchFlights() throws AWTException, InterruptedException {
 		
 		homepage.enterOriginCity("Kochi");
 		homepage.enterdestination("Singapore");
+		homepage.departDate();
 		
 		
 		
