@@ -37,6 +37,7 @@ SingaporeAirlinesHomePage homepage;
 		
 		homepage.enterOriginCity("Kochi");
 		homepage.enterdestination("Singapore");
+		homepage.popHandling();
 		homepage.departDate();
 		
 		

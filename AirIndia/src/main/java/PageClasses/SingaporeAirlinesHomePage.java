@@ -7,6 +7,7 @@ import java.awt.event.KeyEvent;
 import java.time.Duration;
 
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -47,8 +48,11 @@ public class SingaporeAirlinesHomePage {
 	WebElement DateChoosen;
 	
 	
-	@FindBy(xpath = "//button[text()=\"Accept\"]")
-	WebElement Popup;
+	@FindBy(xpath = "//div[@class=\"dwc--SiaCookie__PopupCookie\"]")
+	WebElement Popup1;
+	
+	@FindBy(xpath="//button[text()='Accept']")
+	WebElement popup2;
 //	
 	
 	
@@ -85,15 +89,36 @@ public class SingaporeAirlinesHomePage {
 		//firstDestinationCity.click();
 	}
 	
-	
+	public void popHandling() {
+		
+		
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
+		try {
+			boolean status = popup2.isDisplayed();
+			if(status) {
+			popup2.click();
+			wait1.until(ExpectedConditions.invisibilityOf(popup2));	
+			
+			}
+		}
+			
+			catch(NoSuchElementException se)
+		{
+				System.out.println(se);
+		}
+		}
+			
+		
 	public void departDate() throws InterruptedException {
 		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		departDate.click();
-		firstCalendarMonthDropdown.click();
-		firstClandarMonthDropdownSecondOption.click();
-		wait.until(ExpectedConditions.visibilityOf(DateChoosen));
-		DateChoosen.click();
-	}
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			departDate.click();
+			firstCalendarMonthDropdown.click();
+			firstClandarMonthDropdownSecondOption.click();
+			wait.until(ExpectedConditions.visibilityOf(DateChoosen));
+			DateChoosen.click();
 
+			
+	}
 }
+
